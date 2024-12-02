@@ -68,11 +68,11 @@ uK = math.tan(angle_radians)
 def on_key(event):
     global uM
     if event.key == 'up':
-        uM += (uK)
+        uM += (-uK)
         print("uD:", uD, "halfD:", halfD, "uK:", uK, 'xStep', xStep)
         plot_w1_values(uM)
     elif event.key == 'down':
-        uM -= (uK)
+        uM -= (-uK)
         print("uD:", uD, "halfD:", halfD, "uK:", uK, 'xStep', xStep)
         plot_w1_values(uM)
     elif event.key == 'left':
